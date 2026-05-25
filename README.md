@@ -8,13 +8,6 @@
 
 ---
 
-## 👤 Author
-
-**Collins Adegoke** — Mid-Level Data Analyst  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/collins-adegoke-21375b252)
-
----
-
 ## 📌 Table of Contents
 
 - [Project Summary](#project-summary)
@@ -205,11 +198,18 @@ This project delivers three interactive Power BI dashboards:
 ### 1. 🟢 GreenTech Visualization
 The executive-level overview dashboard providing a high-level summary of production performance across all product lines. Designed for management to quickly assess overall operational health, track total downtime, and monitor production output trends over time.
 
+<img width="2285" height="1167" alt="Greentech visualisation" src="https://github.com/user-attachments/assets/1b03d57e-3ee8-4c1b-9324-cefbef74ad69" />
+
+
 ### 2. ⏱️ Duration Analysis
 A deep-dive dashboard analysing batch duration against planned production times. This page identifies where production is running over schedule, highlights the most time-consuming downtime factors using Pareto analysis, and breaks down downtime distribution by product and factor category.
 
+<img width="2286" height="1163" alt="duration analysis" src="https://github.com/user-attachments/assets/77390fa0-9821-4fba-83b3-c6884985adab" />
+
 ### 3. 👷 Operator Scheduling
 A workforce-focused dashboard evaluating operator performance, shift allocation, and scheduling efficiency. This page surfaces overlapping shifts, highlights operators with the highest downtime rates, and distinguishes between operator-error and non-operator-error downtime to support targeted training and scheduling improvements.
+
+<img width="2287" height="1163" alt="operator schedulling" src="https://github.com/user-attachments/assets/ab7e4ea8-79a1-49d3-ae1e-d4cdfd311050" />
 
 > 📁 Dashboard file: `powerbi/greentech_dashboard.pbix`
 
@@ -229,75 +229,11 @@ Key areas the analysis targets:
 
 ---
 
-## 📁 Repository Structure
-
-```
-production-downtime-analysis/
-│
-├── README.md                          # Project documentation
-│
-├── data/
-│   ├── raw/                           # Original database backup or CSV exports
-│   └── cleaned/                       # Cleaned and validated datasets
-│
-├── sql/
-│   ├── 01_data_cleaning.sql           # Null handling and data validation
-│   ├── 02_data_transformation.sql     # Normalisation and reshaping
-│   └── 03_kpi_queries.sql             # KPI calculations and metrics
-│
-├── powerbi/
-│   └── greentech_dashboard.pbix       # Power BI report (3 dashboard pages)
-│
-├── docs/
-│   └── project_overview.md            # Extended project documentation
-│
-└── assets/
-    └── screenshots/
-        ├── greentech_visualization.png
-        ├── duration_analysis.png
-        └── operator_scheduling.png
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Microsoft SQL Server or SQL Server Express
-- SQL Server Management Studio (SSMS)
-- Power BI Desktop (free download from Microsoft)
-
-### Steps
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/collins-adegoke/production-downtime-analysis.git
-cd production-downtime-analysis
-```
-
-**2. Restore the database**
-- Open SSMS
-- Right-click **Databases → Restore Database**
-- Select the `.bak` backup file from the `data/raw/` folder
-- Click OK to restore
-
-**3. Run SQL scripts in order**
-```
-01_data_cleaning.sql  →  02_data_transformation.sql  →  03_kpi_queries.sql
-```
-
-**4. Open the Power BI dashboard**
-- Launch Power BI Desktop
-- Open `powerbi/greentech_dashboard.pbix`
-- Update the data source connection to point to your SQL Server instance
-- Refresh the data
-
----
-
 ## 📬 Contact
 
 **Collins Adegoke**  
-Mid-Level Data Analyst  
+**Collins@cyfercore.com **
+
 🔗 [LinkedIn](https://www.linkedin.com/in/collins-adegoke-21375b252)
 
 ---
