@@ -16,12 +16,10 @@
 - [Business Challenge](#business-challenge)
 - [Project Objectives](#project-objectives)
 - [Dataset Description](#dataset-description)
-- [Tech Stack](#tech-stack)
 - [Project Workflow](#project-workflow)
-- [Dashboards](#dashboards)
-- [Key Insights & Recommendations](#key-insights--recommendations)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
+- [Dashboards & Key Insights](#dashboards-KeyInsights)
+- [Role & Responsibilities](#Role-Responsibilities)
+- [Tech Stack](#tech-stack)
 
 ---
 
@@ -82,22 +80,11 @@ As GreenTech Manufacturing scales, it has encountered persistent challenges in i
 - 📝 **Manual Scheduling** — Heavy reliance on manual input causing errors, misalignments, and inefficiencies
 - 👁️ **Limited Data Visibility** — Lack of real-time data preventing proactive identification of bottlenecks
 
-### Business Impact of Downtime
-
-| Impact Area | Description |
-|---|---|
-| Operational Inefficiency | Wasted labour hours and unused machine capacity across production lines |
-| Financial Loss | **$1.5 million estimated annual revenue loss** from production delays |
-| Customer Delays | Missed production deadlines leading to late order fulfilment and damaged customer relationships |
-| Resource Wastage | Overstocking of some materials while others run short, increasing inventory management costs |
-
 ---
 
 ## 🎯 Project Objectives
 
-The primary goal of this project is to build a data-driven analytics solution that identifies the root causes of production downtime, optimises scheduling, and enables continuous performance monitoring.
-
-### Specific Objectives
+The primary goal of this project is to build a data-driven analytics solution that identifies the root causes of production downtime, optimises scheduling, and enables continuous performance monitoring. the core Objectives include
 
 - 🔍 **Identify Root Causes of Downtime** — Analyse downtime records to determine key contributors across machine, material, and operator dimensions
 - 📅 **Optimise Production Scheduling** — Use batch-level production data to identify scheduling inefficiencies and idle time patterns
@@ -152,15 +139,6 @@ Four relational datasets form the foundation of this analysis:
 
 ---
 
-## 🛠️ Tech Stack
-
-| Tool | Role in Project |
-|---|---|
-| **Microsoft SQL Server** | Database restoration, data cleaning, transformation, and KPI query development |
-| **Power BI Desktop** | Interactive dashboard development, KPI visualisation, and real-time reporting |
-
----
-
 ## 🔄 Project Workflow
 
 The project follows a structured six-stage analytics pipeline:
@@ -200,6 +178,21 @@ The executive-level overview dashboard providing a high-level summary of product
 
 <img width="2285" height="1167" alt="Greentech visualisation" src="https://github.com/user-attachments/assets/1b03d57e-3ee8-4c1b-9324-cefbef74ad69" />
 
+## 📊 Downtime Factor Analysis — Key Insights
+
+- Identified **885 downtime factors**, resulting in **22 full days of lost production**, highlighting a major opportunity for operational recovery.
+- Found that **363 out of 645 batches were delayed**, showing downtime is directly impacting more than half of all production runs.
+- Highlighted **GreenFoam Hand Soap** as the most affected product with **323 downtime events**, indicating a high‑risk SKU requiring process optimisation.
+- Revealed that **operator‑related issues account for 68.93%** of all downtime, demonstrating the need for targeted training and stronger SOP compliance.
+- Pinpointed **Paul** as the operator with the highest downtime count (**164 events**), showing where coaching or workflow redesign could deliver immediate impact.
+- Identified **Linda’s 70.73% delayed batch rate**, linking operator scheduling to batch performance and highlighting a key optimisation area.
+- Exposed **Cleaning & Sanitisation (86 events)** as the top downtime cause, suggesting inefficiencies in changeover and hygiene procedures.
+- Found recurring issues such as **Raw Material Shortage (77)** and **Scheduling/Coordination delays (76)**, indicating cross‑departmental bottlenecks.
+- Detected **Machine Breakdown (75)** as a major contributor, supporting the case for improved preventive maintenance strategies.
+- Observed consistently high downtime across months, with **April (157)** and **August (156)** showing peak disruption, suggesting cyclical or seasonal operational stress.
+
+These insights demonstrate how data‑driven analysis can uncover operational bottlenecks, reduce delays, and improve overall production efficiency.
+
 
 ### 2. ⏱️ Duration Analysis
 A deep-dive dashboard analysing batch duration against planned production times. This page identifies where production is running over schedule, highlights the most time-consuming downtime factors using Pareto analysis, and breaks down downtime distribution by product and factor category.
@@ -214,18 +207,38 @@ A workforce-focused dashboard evaluating operator performance, shift allocation,
 > 📁 Dashboard file: `powerbi/greentech_dashboard.pbix`
 
 ---
+### Business Impact of Downtime
 
-## 💡 Key Insights & Recommendations
+| Impact Area | Description |
+|---|---|
+| Operational Inefficiency | Wasted labour hours and unused machine capacity across production lines |
+| Financial Loss | **$1.5 million estimated annual revenue loss** from production delays |
+| Customer Delays | Missed production deadlines leading to late order fulfilment and damaged customer relationships |
+| Resource Wastage | Overstocking of some materials while others run short, increasing inventory management costs |
 
-> *(To be updated with findings upon project completion)*
 
-Key areas the analysis targets:
+---
+## 👨‍💻 Role & Responsibilities
 
-- **Top downtime factors** responsible for the majority of production losses
-- **Operators** with the highest error-related downtime rates
-- **Products** with the widest gap between planned and actual batch duration
-- **Shift scheduling conflicts** causing preventable idle time
-- **Recommended scheduling adjustments** to improve capacity utilisation
+As the Data Analyst on this project, I was responsible for delivering the full end‑to‑end analytics workflow — from restoring and exploring the SQL Server database to building the final Power BI dashboards. My work included data assessment, cleaning, transformation, and writing optimized T‑SQL queries to support four core analytical objectives:
+
+- Cumulative downtime ranking across all products  
+- Operator fault attribution and performance analysis  
+- Schedule overrun and batch delay investigation  
+- Downtime factor diversity and root‑cause analysis per product  
+
+This end‑to‑end ownership ensured that the insights produced were accurate, actionable, and aligned with real operational challenges within the manufacturing environment.
+
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Role in Project |
+|---|---|
+| **Microsoft SQL Server** | Database restoration, data cleaning, transformation, and KPI query development |
+| **Power BI Desktop** | Interactive dashboard development, KPI visualisation, and real-time reporting |
+
 
 ---
 
